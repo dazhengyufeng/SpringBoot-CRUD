@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+ip: 192.168.10.110
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${ip}:3306/department_and_people?useSSL=false&verifyServerCertificate=false&useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: root
